@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container page-form">
+    <form id="login-form" action="/auth/register" method="post">
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="text" id="email" name="email" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-success">Sign Up</button>
+
+
+    </form>
+</div>
+<a href="/login"><button class="btn btn-primary">Have an account already?</button></a>
+{% endblock %}
